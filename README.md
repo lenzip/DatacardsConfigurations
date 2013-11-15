@@ -18,6 +18,14 @@ Channels considered:
        shape
 
 
+Ntuples folder:
+
+    eos something ...
+
+
+Datadriven folder:
+
+   eos something ...
 
 
 To prepare:
