@@ -6,9 +6,18 @@ Collection of "shape.py" used in datacards creation
 Channels considered:
 
     vbf
+       shape
+       cut
     vh2j
+       shape
+       cut
     whsc
+       shape
+       cut
     ggH2j
+       shape
+
+
 
 
 To prepare:
