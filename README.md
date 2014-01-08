@@ -9,6 +9,8 @@ Channels considered:
     vh2j
     whsc
     ggH2j
+    ww
+    ww2j (ewk and qcd)
 
 
 Ntuples folder:
