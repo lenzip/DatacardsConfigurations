@@ -16,7 +16,7 @@ Channels considered:
 Ntuples folder:
 
     eos something ...
-
+    /afs/cern.ch/user/m/maiko/work/public/Tree/tree_skim_wwmin/
 
 Datadriven folder:
 
