@@ -41,7 +41,8 @@ listSignals = ['WW']
 rebin=1
 
 # directories
-path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin/'
+#path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin/'
+path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin_09Jan2014'
 
 # not to performe datadriven estimation: just comment!
 path_dd     = '/home/amassiro/Latinos/Shape/dd/Cut_WW_2012_20fb/'
@@ -54,11 +55,12 @@ path_shape_merged='merged'
 
 
 # remove some nuisances defined in mkShapes.py
-skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
+#skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
+skipSyst = ["leptonEfficiency_up","leptonEfficiency_down","chargeResolution","puW_up","puW_down"]
 
 # activate/de-activate some nuisances
 shapeFlags = [('CMS_8TeV_ch_res',False)]
-nuisFlags = [('CMS_hww_FakeRate_e',False),('CMS_hww_FakeRate_m',False)]
+#nuisFlags = [('CMS_hww_FakeRate_e',False),('CMS_hww_FakeRate_m',False)]
 
 
 
