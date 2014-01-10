@@ -9,7 +9,7 @@ Channels considered:
     vh2j
     whsc
     ggH2j
-    ww
+    ww   (0/1 jet SF/DF)
     ww2j (ewk and qcd)
 
 
