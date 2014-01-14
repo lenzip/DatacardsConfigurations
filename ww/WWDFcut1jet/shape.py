@@ -34,7 +34,7 @@ xlabel='events'
 
 
 # signal definition: needed because Higgs is not the signal here
-listSignals = ['WW']
+listSignals = ['WW','ggWW']
 
 # usato da mkmerged  -> li ricompatto dopo
 # rebin=10
