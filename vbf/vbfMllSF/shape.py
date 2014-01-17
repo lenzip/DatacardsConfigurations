@@ -61,6 +61,8 @@ MCextrap = [('CMS_8TeV_hww_Top_2j_stat',  'Top',      'CHITOP')]
 shapeFlags = [('CMS_8TeV_ch_res',False)]
 nuisFlags = [('CMS_hww_FakeRate_e',False),('CMS_hww_FakeRate_m',False)]
 
+# systematics to skip
+skipSyst = ['chargeResolution', 'leptonEfficiency_down', 'leptonEfficiency_up']
 
 
 
