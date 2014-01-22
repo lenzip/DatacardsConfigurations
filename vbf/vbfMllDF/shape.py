@@ -44,8 +44,12 @@ xlabel='m(ll) [GeV]'
 rebin=1
 
 # directories
-path_latino = '/data2/amassiro/VBF/Summer12/28Jan2013/Shape/tree_skim_wwmin/'
-path_dd     = '/data2/amassiro/VBF/Summer12/28Jan2013/Shape/dd/Mll_2012_20fb/'
+path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin_2j_wwewk/'
+path_dd     = '/home/amassiro/Latinos/Shape/dd/Mll_2012_20fb/'
+
+# directories
+#path_latino = '/data2/amassiro/VBF/Summer12/28Jan2013/Shape/tree_skim_wwmin/'
+#path_dd     = '/data2/amassiro/VBF/Summer12/28Jan2013/Shape/dd/Mll_2012_20fb/'
 
 
 
@@ -58,11 +62,15 @@ path_shape_merged='merged'
 MCextrap = [('CMS_8TeV_hww_Top_2j_stat',  'Top',      'CHITOP')]
 
 
-shapeFlags = [('CMS_8TeV_ch_res',False)]
-nuisFlags = [('CMS_hww_FakeRate_e',False),('CMS_hww_FakeRate_m',False)]
+#shapeFlags = [('CMS_8TeV_ch_res',False)]
+#nuisFlags = [('CMS_hww_FakeRate_e',False),('CMS_hww_FakeRate_m',False)]
 
-# systematics to skip
-skipSyst = ['chargeResolution', 'leptonEfficiency_down', 'leptonEfficiency_up']
+# remove some nuisances defined in mkShapes.py
+skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
+
+# activate/de-activate some nuisances
+shapeFlags = [('CMS_8TeV_ch_res',False)]
+nuisFlags = [('CMS_8TeV_hww_WJet_FakeRate_e_shape_2j',False),('CMS_8TeV_hww_WJet_FakeRate_m_shape_2j',False)]
 
 
 
