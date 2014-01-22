@@ -12,3 +12,7 @@ and the datadriven estimation:
 
     cp ../../../dd/Cut_WW_2012_20fb/*.txt   dd/
 
+    /home/amassiro/Latinos/Shape/dd/Cut_WW2jewk_2012_20fb/
+    /home/amassiro/Latinos/Shape/dd/Shape_WW2jewk_2012_20fb
+
+
