@@ -35,3 +35,23 @@ To prepare:
     ls -d */   | awk '{print "cp ../../"$1"/shape.py ./"$1"/; cp ../../"$1"/do*.sh ./"$1"/"}'
 
 
+
+
+
+All trees:
+
+data:
+
+    /eos/cms/store/user/maiko/ww/ntuples/systematics2013/data/
+
+MC:
+
+    /eos/cms/store/user/maiko/ww/ntuples/systematics2013/nominals/
+
+Wjets:
+
+    /eos/cms/store/user/maiko/ww/ntuples/systematics2013/wjets/
+
+
+
+
