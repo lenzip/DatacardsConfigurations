@@ -6,17 +6,29 @@ mkdir data
 eos cp /eos/cms/store/user/maiko/ww/ntuples/systematics2013/data/*.root data/
 
 mkdir wjets
-eos cp /eos/cms/store/user/maiko/ww/ntuples/systematics2013/wjets/*.root wjets
+eos cp /eos/cms/store/user/maiko/ww/ntuples/systematics2013/wjets/*.root wjets/
 
 
-mkdir templates
 
 mkdir vgTemplate
-eos cp /eos/cms/store/user/maiko/ww/ntuples/systematics2013/vgTemplate/*.root vgTemplate
+eos cp /eos/cms/store/user/maiko/ww/ntuples/systematics2013/vgTemplate/*.root vgTemplate/
 
+mkdir templates
 cd templates
 ln -s ../vgTemplate/*root .
 ln -s ../nominals/*root .
+cd ..
+
+
+
+
+# filter otherwise it will never end!
+gardener.py filter -f "njet>=2 && pfmet>20 && mpmet>20" -r  tree_skim_all/nominals/ tree_skim_2j_met20/nominals/
+gardener.py filter -f "njet>=2 && pfmet>20 && mpmet>20" -r  tree_skim_all/data/ tree_skim_2j_met20/data/
+gardener.py filter -f "njet>=2 && pfmet>20 && mpmet>20" -r  tree_skim_all/wjets/ tree_skim_2j_met20/wjets/
+
+
+
 
 
 
