@@ -34,21 +34,25 @@ To prepare datacards:
     mv datacards  WWSFcut1jet
 
     cd WWDFcut0jet
-    python ../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.of_0j_shape.txt
+    python ../../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.of_0j_shape.txt
     cd ..
     cd WWDFcut1jet
-    python ../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.of_1j_shape.txt
+    python ../../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.of_1j_shape.txt
     cd ..
     cd WWSFcut0jet
-    python ../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.sf_0j_shape.txt
+    python ../../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.sf_0j_shape.txt
     cd ..
     cd WWSFcut1jet
-    python ../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.sf_1j_shape.txt
+    python ../../../ModificationDatacards/TransformShapeToCutBased.py  -d   hww-19.36fb.mH125.sf_1j_shape.txt
     cd ..
 
     rm -r WW?Fcut?jet/shapes/
 
 
+and copy
+
+    rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/WW?Fcut?jet/
+    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/
 
 
 
