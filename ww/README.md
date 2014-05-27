@@ -75,7 +75,10 @@ Prepare combine framework
 
 Get datacards:
 
-    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/
+    cp -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/*/ ./
+
+
+Prepare datacards:
 
     cd /afs/cern.ch/user/a/amassiro/scratch0/VBF/Limit/CMSSW_6_1_0/src
     export SCRAM_ARCH=slc5_amd64_gcc462
@@ -126,6 +129,11 @@ Run:
 
     perl submitLocal_CutBased_PostFit.pl WW0jet
     perl submitLocal_CutBased_PostFit.pl WW1jet
+
+
+Read the results:
+
+    cat 
 
 
 
