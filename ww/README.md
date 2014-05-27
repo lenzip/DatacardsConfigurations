@@ -84,22 +84,6 @@ Prepare datacards:
     export SCRAM_ARCH=slc5_amd64_gcc462
     cmsenv
 
-    rm -r  dc-WWDFcut0jet
-    tar -xvf WWDFcut0jet.tgz
-    mv datacards/ dc-WWDFcut0jet
-
-    rm -r  dc-WWSFcut0jet
-    tar -xvf WWSFcut0jet.tgz
-    mv datacards/ dc-WWSFcut0jet
-
-    rm -r  dc-WWDFcut1jet
-    tar -xvf WWDFcut1jet.tgz
-    mv datacards/ dc-WWDFcut1jet
-
-    rm -r  dc-WWSFcut1jet
-    tar -xvf WWSFcut1jet.tgz
-    mv datacards/ dc-WWSFcut1jet
-
     rm *.root
 
 
@@ -133,7 +117,20 @@ Run:
 
 Read the results:
 
-    cat 
+    cat asymptotic.postFit.hww-19.125.WWDFcut0jet.out  | grep "Best fit r"
+    cat asymptotic.postFit.hww-19.125.WWSFcut0jet.out  | grep "Best fit r"
+    cat asymptotic.postFit.hww-19.125.WWDFcut1jet.out  | grep "Best fit r"
+    cat asymptotic.postFit.hww-19.125.WWSFcut1jet.out  | grep "Best fit r"
+
+    cat asymptotic.postFit.hww-19.125.WW0jet.out  | grep "Best fit r"
+    cat asymptotic.postFit.hww-19.125.WW1jet.out  | grep "Best fit r"
+
+
+
+
+
+
+
 
 
 
