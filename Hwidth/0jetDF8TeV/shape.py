@@ -1,5 +1,5 @@
 # tag, used to name the intermediate shape files
-tag='mll-mth'
+tag='mll'
 
 # luminosity to normalize to
 lumi=19.47
@@ -9,7 +9,7 @@ chans=['of_0j']
 dataset='Data2012'
 
 # set of mc samples: 0j1j, vbf
-mcset='Hwidth'
+mcset='Hwidth_01j'
 
 # variable, or formula to use: mll, mjj, 2*unboostedMr
 # for 2D, use TTree::Draw sytax i.e. x:y
@@ -40,6 +40,13 @@ xlabel='m_{ll}'
 
 # rebin=10
 rebin=1
+
+
+
+# signal definition: needed because Higgs is not the signal here
+listSignals = ['ggH_sbi','ggH_b']
+
+
 
 # directories
 # path_latino: latino's files
