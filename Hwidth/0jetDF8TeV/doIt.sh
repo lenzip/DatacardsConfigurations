@@ -14,4 +14,9 @@ mkMerged.py -m 125
 mkDatacards.py -m 125
 
 
+mkAutopsy.py datacards/hww-19.47fb.mH125.of_0j_shape.txt   --dump=postFit/Hwidth-0j-of-error-signalInjection.root --injectionSignal
+mkAutopsy.py datacards/hww-19.47fb.mH125.of_0j_shape.txt   --dump=postFit/Hwidth-0j-of-error-data.root
+
+
+
 
