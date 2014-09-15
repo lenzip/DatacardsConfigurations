@@ -26,3 +26,14 @@ scaleAndSmearTree.py -i nominals/$1 -o electronResolution/$1  -a electronResolut
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latinogg2vv_Hw25_CotHead_8TeV.root
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latinogg2vv_Hw25_CotTail_8TeV.root
 #
+#
+# /afs/cern.ch/user/j/jfernan2/public/forAndrea/latino_150_qqww1sm.root
+# /afs/cern.ch/user/j/jfernan2/public/forAndrea/latino_151_qqww9sm.root
+# /afs/cern.ch/user/j/jfernan2/public/forAndrea/latino_152_qqww25sm.roo
+#
+#
+# bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_150_qqww1sm.root
+# bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_151_qqww9sm.root
+# bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_152_qqww25sm.root
+#
+
