@@ -67,6 +67,7 @@ path_shape_raw='raw'
 path_shape_merged='merged'
 
 
+floatN = ['WW']
 
 
 # remove some nuisances defined in mkShapes.py

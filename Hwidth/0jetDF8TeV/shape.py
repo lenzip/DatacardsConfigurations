@@ -68,6 +68,8 @@ path_shape_merged='merged'
 
 
 
+floatN = ['WW']
+
 
 # remove some nuisances defined in mkShapes.py
 skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
