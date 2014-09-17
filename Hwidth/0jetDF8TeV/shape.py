@@ -46,7 +46,7 @@ rebin=1
 
 
 # signal definition: needed because Higgs is not the signal here
-listSignals = ['ggH_sbi','ggH_b','ggH_s',   'ggH','qqH']
+listSignals = ['ggH_sbi','ggH_b','ggH_s','qqH_sbi','qqH_b','qqH_s',   'ggH','qqH']
 
 
 
