@@ -19,7 +19,7 @@ range = (1,0,2)
 
 dataset='Data2012'
 
-mcset='0j1j'
+mcset='0j1jWW'
 
 
 # errore statistico
