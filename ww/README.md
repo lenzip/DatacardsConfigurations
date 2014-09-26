@@ -1,6 +1,10 @@
 WW
 =======================
 
+Where:
+  
+   /home/amassiro/Latinos/Shape/playground/DatacardsConfigurations/ww
+
 To prepare:
 
     ls -d ../../WW?Fcut?jet/ | tr "." " " | tr "/" " " | awk '{print "mkdir "$2}'
