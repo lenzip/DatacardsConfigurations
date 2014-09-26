@@ -1,9 +1,12 @@
 WW
 =======================
 
+Repository
+====
+
 Where:
   
-   /home/amassiro/Latinos/Shape/playground/DatacardsConfigurations/ww
+    /home/amassiro/Latinos/Shape/playground/DatacardsConfigurations/ww
 
 To prepare:
 
@@ -16,6 +19,8 @@ and the datadriven estimation:
 
 
 
+Datacards
+====
 
 To prepare datacards:
 
