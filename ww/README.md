@@ -64,10 +64,14 @@ and copy
     cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/
 
     rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014/WW?Fcut?jet/
-    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014
+    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014/
 
     rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_POW/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_POW/WW?Fcut?jet/
-    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_POW
+    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_POW/
+
+    rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_MCatNLO/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_MCatNLO/WW?Fcut?jet/
+    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_26Sep2014_MCatNLO/
+
 
 
 Run mu scan
