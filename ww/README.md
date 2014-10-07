@@ -208,10 +208,7 @@ jet veto
 
 and just in one line:
 
-  abs(genVV_S1lepton1_pid)<20   &&     abs(genVV_S1lepton2_pid)<20  &&  abs(genVV_S1lepton1_oVpid)== 24 &&    abs(genVV_S1lepton2_oVpid)!== 24  &&     genVV_S1lepton1_pt > 20   &&     genVV_S1lepton2_pt > 20  &&     abs(genVV_S1lepton1_pid) != abs(genVV_S1lepton2_pid)   &&      ((abs(genVV_S1lepton1_pid)==13 && abs(genVV_S1lepton1_eta)<2.4) ||    (abs(genVV_S1lepton1_pid)==11 && abs(genVV_S1lepton1_eta)<2.5) )  &&  ((abs(genVV_S1lepton2_pid)==13 && abs(genVV_S1lepton2_eta)<2.4) ||   (abs(genVV_S1lepton2_pid)==11 && abs(genVV_S1lepton2_eta)<2.5) )  &&        genVV_jet1_pt < 30
-
-
-abs(genVV_S1lepton1_pid)<20   &&     abs(genVV_S1lepton2_pid)<20  &&  abs(genVV_S1lepton1_oVpid)== 24 &&    abs(genVV_S1lepton2_oVpid)!== 24  &&     genVV_S1lepton1_pt > 20   &&     genVV_S1lepton2_pt > 20    &&      ((abs(genVV_S1lepton1_pid)==13 && abs(genVV_S1lepton1_eta)<2.4) ||    (abs(genVV_S1lepton1_pid)==11 && abs(genVV_S1lepton1_eta)<2.5) )  &&  ((abs(genVV_S1lepton2_pid)==13 && abs(genVV_S1lepton2_eta)<2.4) ||   (abs(genVV_S1lepton2_pid)==11 && abs(genVV_S1lepton2_eta)<2.5) )  &&        genVV_jet1_pt < 30
+    abs(genVV_S1lepton1_pid)<20   &&     abs(genVV_S1lepton2_pid)<20  &&  abs(genVV_S1lepton1_oVpid)== 24 &&    abs(genVV_S1lepton2_oVpid)!== 24  &&     genVV_S1lepton1_pt > 20   &&     genVV_S1lepton2_pt > 20  &&     abs(genVV_S1lepton1_pid) != abs(genVV_S1lepton2_pid)   &&      ((abs(genVV_S1lepton1_pid)==13 && abs(genVV_S1lepton1_eta)<2.4) ||    (abs(genVV_S1lepton1_pid)==11 && abs(genVV_S1lepton1_eta)<2.5) )  &&  ((abs(genVV_S1lepton2_pid)==13 && abs(genVV_S1lepton2_eta)<2.4) ||   (abs(genVV_S1lepton2_pid)==11 && abs(genVV_S1lepton2_eta)<2.5) )  &&        genVV_jet1_pt < 30
 
 
 
