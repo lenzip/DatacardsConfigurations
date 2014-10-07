@@ -22,6 +22,14 @@ and the datadriven estimation:
 Datacards
 ====
 
+Cuts definition:
+
+    https://github.com/latinos/HWWAnalysis/blob/master/ShapeAnalysis/python/hwwinfo.py#L914
+    https://github.com/latinos/HWWAnalysis/blob/master/ShapeAnalysis/python/hwwinfo.py#L427
+
+    CutWW-selection
+
+
 To prepare datacards:
 
 
@@ -142,6 +150,76 @@ Read the results:
 
     cat asymptotic.postFit.hww-19.125.WW0jet.out  | grep "Best fit r"
     cat asymptotic.postFit.hww-19.125.WW1jet.out  | grep "Best fit r"
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fiducial cross section
+====
+
+Cuts definition:
+
+leptons:
+
+    abs(genVV_S1lepton1_pid) < 20
+    abs(genVV_S1lepton2_pid) < 20
+
+
+from W ( W = 24)
+
+    abs(genVV_S1lepton1_oVpid)== 24 
+    abs(genVV_S1lepton2_oVpid)== 24 
+
+
+pt leptons > 20
+
+    genVV_S1lepton1_pt > 20
+    genVV_S1lepton2_pt > 20
+
+
+different flavour
+
+    abs(genVV_S1lepton1_pid) != abs(genVV_S1lepton2_pid)
+
+
+eta cuts (mu = 13, ele = 11)
+
+      ((abs(genVV_S1lepton1_pid)==13 && abs(genVV_S1lepton1_eta)<2.4) ||
+       (abs(genVV_S1lepton1_pid)==11 && abs(genVV_S1lepton1_eta)<2.5) )
+
+      ((abs(genVV_S1lepton2_pid)==13 && abs(genVV_S1lepton2_eta)<2.4) ||
+       (abs(genVV_S1lepton2_pid)==11 && abs(genVV_S1lepton2_eta)<2.5) )
+
+jet veto
+
+      genVV_jet1_pt < 30
+
+
+
+
+and just in one line:
+
+  abs(genVV_S1lepton1_pid)<20   &&     abs(genVV_S1lepton2_pid)<20  &&  abs(genVV_S1lepton1_oVpid)== 24 &&    abs(genVV_S1lepton2_oVpid)!== 24  &&     genVV_S1lepton1_pt > 20   &&     genVV_S1lepton2_pt > 20  &&     abs(genVV_S1lepton1_pid) != abs(genVV_S1lepton2_pid)   &&      ((abs(genVV_S1lepton1_pid)==13 && abs(genVV_S1lepton1_eta)<2.4) ||    (abs(genVV_S1lepton1_pid)==11 && abs(genVV_S1lepton1_eta)<2.5) )  &&  ((abs(genVV_S1lepton2_pid)==13 && abs(genVV_S1lepton2_eta)<2.4) ||   (abs(genVV_S1lepton2_pid)==11 && abs(genVV_S1lepton2_eta)<2.5) )  &&        genVV_jet1_pt < 30
+
+
+abs(genVV_S1lepton1_pid)<20   &&     abs(genVV_S1lepton2_pid)<20  &&  abs(genVV_S1lepton1_oVpid)== 24 &&    abs(genVV_S1lepton2_oVpid)!== 24  &&     genVV_S1lepton1_pt > 20   &&     genVV_S1lepton2_pt > 20    &&      ((abs(genVV_S1lepton1_pid)==13 && abs(genVV_S1lepton1_eta)<2.4) ||    (abs(genVV_S1lepton1_pid)==11 && abs(genVV_S1lepton1_eta)<2.5) )  &&  ((abs(genVV_S1lepton2_pid)==13 && abs(genVV_S1lepton2_eta)<2.4) ||   (abs(genVV_S1lepton2_pid)==11 && abs(genVV_S1lepton2_eta)<2.5) )  &&        genVV_jet1_pt < 30
+
+
+
+
+
+
+
+
 
 
 
