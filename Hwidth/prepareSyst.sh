@@ -36,6 +36,7 @@ scaleAndSmearTree.py -i nominals/$1 -o electronResolution/$1  -a electronResolut
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_151_qqww9sm.root
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_152_qqww25sm.root
 #
+# cd /home/amassiro/Latinos/Shape/tree_skim_all/
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_160_qqww1smEM_baseW.root
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_161_qqww9smEM_baseW.root
 # bash /home/amassiro/Latinos/Shape/playground/Hwidth/prepareSyst.sh    latino_162_qqww25smEM_baseW.root
