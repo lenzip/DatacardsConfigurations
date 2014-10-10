@@ -2,7 +2,7 @@
 tag='mll'
 
 # luminosity to normalize to
-lumi = 19.47
+lumi = 19.365
 chans = ['of_1j']
 
 # dataset to use: Data2012, Data2012A, Data2012B, SI125
@@ -58,9 +58,10 @@ listSignals = ['ggH_sbi','ggH_b','ggH_s','qqH_sbi','qqH_b','qqH_s',   'ggH','qqH
 #path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin_2j/'
 path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all/'
 #path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin/'
+
 # not to performe datadriven estimation: just comment!
 #path_dd = '/home/amassiro/Latinos/Shape/dd/Shape_ggH2j_2012_20fb/'
-#path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_195fb'
+path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
 
 # other directories
 path_shape_raw='raw'
