@@ -109,7 +109,7 @@ Get datacards:
 
 Fix datacards removing unwanted nuisances:
 
-    ls WW?Fcut?jet/*.txt |  awk '{print "cat "$1" | grep -v QCDscale_WW | grep -v QCDscale_WW1in > "$1".tmp; mv "$1".tmp "$1}'    sed s/day/night/ <old >new
+    ls WW?Fcut?jet/*.txt |  awk '{print "cat "$1" | grep -v QCDscale_WW | grep -v QCDscale_WW1in > "$1".tmp; mv "$1".tmp "$1}' 
 
 Prepare datacards:
 
@@ -141,11 +141,16 @@ Run:
     mkdir WW1jet
     ls WWDFcut1jet/hww-*.txt | tr "/" " " | tr "." " " |  awk '{print "combineCards.py WWDF1j=WWDFcut1jet/"$2"."$3"."$4".of_1j_shape.txt  WWSF1j=WWSFcut1jet/"$2"."$3"."$4".sf_1j_shape.txt   > WW1jet/"$2"."$3"."$4".txt "}' | /bin/sh
 
+    rm -r WW01jet
+    mkdir WW01jet
+    ls WWDFcut0jet/hww-*.txt | tr "/" " " | tr "." " " |  awk '{print "combineCards.py WWDF0j=WWDFcut0jet/"$2"."$3"."$4".of_0j_shape.txt  WWSF0j=WWSFcut0jet/"$2"."$3"."$4".sf_0j_shape.txt   > WW0jet/"$2"."$3"."$4".txt WWDF1j=WWDFcut1jet/"$2"."$3"."$4".of_1j_shape.txt  WWSF1j=WWSFcut1jet/"$2"."$3"."$4".sf_1j_shape.txt   > WW01jet/"$2"."$3"."$4".txt"}' | /bin/sh
+
 
     rm asymptotic*WW?jet.out
 
     perl submitLocal_CutBased_PostFit.pl WW0jet
     perl submitLocal_CutBased_PostFit.pl WW1jet
+    perl submitLocal_CutBased_PostFit.pl WW01jet
 
 
 Read the results:
@@ -158,6 +163,7 @@ Read the results:
     cat asymptotic.postFit.hww-19.125.WW0jet.out  | grep "Best fit r"
     cat asymptotic.postFit.hww-19.125.WW1jet.out  | grep "Best fit r"
 
+    cat asymptotic.postFit.hww-19.125.WW01jet.out  | grep "Best fit r"
 
 
 
