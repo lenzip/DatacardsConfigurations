@@ -7,3 +7,9 @@ emu
     1 jet: 1jetDF8TeV
     2 jet: 2jetDF8TeV
 
+
+To run the limit:
+
+    https://github.com/amassiro/LimitCombine/tree/master/HiggsWidth/test
+
+
