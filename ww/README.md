@@ -103,8 +103,9 @@ Prepare combine framework
 
 Get datacards:
 
+    rm -r WW?Fcut?jet/
     cp -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/*/ ./
-
+    cp -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_08Oct2014_POW/*/   ./
 
 Prepare datacards:
 
