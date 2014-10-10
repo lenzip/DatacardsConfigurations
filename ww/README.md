@@ -107,6 +107,10 @@ Get datacards:
     cp -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww/*/ ./
     cp -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_08Oct2014_POW/*/   ./
 
+Fix datacards removing unwanted nuisances:
+
+    ls WW?Fcut?jet/*.txt |  awk '{print "cat "$1" | grep -v QCDscale_WW | grep -v QCDscale_WW1in > "$1".tmp; mv "$1".tmp "$1}'    sed s/day/night/ <old >new
+
 Prepare datacards:
 
     cd /afs/cern.ch/user/a/amassiro/scratch0/VBF/Limit/CMSSW_6_1_0/src
