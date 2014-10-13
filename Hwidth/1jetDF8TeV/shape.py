@@ -56,12 +56,13 @@ listSignals = ['ggH_sbi','ggH_b','ggH_s','qqH_sbi','qqH_b','qqH_s',   'ggH','qqH
 # path_bdt: location of bdt-trees
 
 #path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin_2j/'
-path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all/'
+#path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all/'
+path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all_hwidth/'
 #path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin/'
 
 # not to performe datadriven estimation: just comment!
 #path_dd = '/home/amassiro/Latinos/Shape/dd/Shape_ggH2j_2012_20fb/'
-path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
+#path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
 
 # other directories
 path_shape_raw='raw'

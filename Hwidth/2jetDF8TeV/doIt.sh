@@ -14,8 +14,8 @@ mkMerged.py -m 125
 mkDatacards.py -m 125
 
 
-mkAutopsy.py datacards/hww-19.47fb.mH125.of_2j_shape.txt   --dump=postFit/Hwidth-2j-of-error-signalInjection.root --injectionSignal
-mkAutopsy.py datacards/hww-19.47fb.mH125.of_2j_shape.txt   --dump=postFit/Hwidth-2j-of-error-data.root
+mkAutopsy.py datacards/hww-19.36fb.mH125.of_2j_shape.txt   --dump=postFit/Hwidth-2j-of-error-signalInjection.root --injectionSignal
+mkAutopsy.py datacards/hww-19.36fb.mH125.of_2j_shape.txt   --dump=postFit/Hwidth-2j-of-error-data.root
 
 
 
