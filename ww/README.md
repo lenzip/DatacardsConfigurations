@@ -83,6 +83,9 @@ and copy
     rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_08Oct2014_POW/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_08Oct2014_POW/WW?Fcut?jet/
     cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_08Oct2014_POW/
 
+    mkdir /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_22Oct2014_POW/
+    rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_22Oct2014_POW/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_22Oct2014_POW/WW?Fcut?jet/
+    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_22Oct2014_POW/
 
 Run mu scan
 ====
