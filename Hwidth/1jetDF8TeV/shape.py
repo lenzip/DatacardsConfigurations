@@ -62,7 +62,7 @@ path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all_hwidth/'
 
 # not to performe datadriven estimation: just comment!
 #path_dd = '/home/amassiro/Latinos/Shape/dd/Shape_ggH2j_2012_20fb/'
-#path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
+path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
 
 # other directories
 path_shape_raw='raw'
@@ -73,10 +73,10 @@ floatN = ['WW']
 
 
 # remove some nuisances defined in mkShapes.py
-skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
+skipSyst = ['JER_down','JER_up','metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
 
 # activate/de-activate some nuisances
 shapeFlags = [('CMS_8TeV_ch_res',False)]
 nuisFlags = [('CMS_8TeV_hww_WJet_FakeRate_e_shape_2j',False),('CMS_8TeV_hww_WJet_FakeRate_m_shape_2j',False)]
 
-
+SpecialSettings = 'HWidth'

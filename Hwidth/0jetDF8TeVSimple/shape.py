@@ -29,7 +29,7 @@ selection='Hwidthmthmll'
 #range = 'mth-mll-hilospin'
 #range = '(30,80,280,8,0,200)'
 #range = (30,0,300)
-range = 'Hwidth-range'
+range = 'HwidthSimple-range'
 
 # statmode: defined the style of the statistical systematics:
 # - unified: 1 up and 1 down histogram, all bins fluctuating up/down respectively
@@ -74,10 +74,10 @@ floatN = ['WW']
 
 
 # remove some nuisances defined in mkShapes.py
-skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
+skipSyst = ['JER_down','JER_up','metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
 
 # activate/de-activate some nuisances
 shapeFlags = [('CMS_8TeV_ch_res',False)]
 nuisFlags = [('CMS_8TeV_hww_WJet_FakeRate_e_shape_2j',False),('CMS_8TeV_hww_WJet_FakeRate_m_shape_2j',False)]
 
-
+SpecialSettings = 'HWidth'
