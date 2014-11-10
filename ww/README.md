@@ -91,6 +91,10 @@ and copy
     rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_27Oct2014_POW/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_27Oct2014_POW/WW?Fcut?jet/
     cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_27Oct2014_POW/
 
+    mkdir /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_10Nov2014_POW/
+    rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_10Nov2014_POW/*.tgz /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_10Nov2014_POW/WW?Fcut?jet/
+    cp -r * /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_10Nov2014_POW/
+
 Run mu scan
 ====
 
@@ -119,6 +123,10 @@ Fix datacards removing unwanted nuisances:
 
     ls WW?Fcut?jet/*.txt |  awk '{print "cat "$1" | grep -v QCDscale_WW | grep -v QCDscale_WW1in > "$1".tmp; mv "$1".tmp "$1}' 
     ls WW?Fcut?jet/*.txt |  awk '{print "cat "$1" | grep -v QCDscale_WW | grep -v QCDscale_WW1in > "$1".tmp; mv "$1".tmp "$1}' | /bin/sh 
+
+    rm -r /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_27Oct2014_POW_nuisance_removed/
+    mkdir /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_27Oct2014_POW_nuisance_removed/
+    cp -r WW?Fcut?jet/   /afs/cern.ch/user/a/amassiro/public/xLatinos/ww_27Oct2014_POW_nuisance_removed/
 
 Prepare datacards:
 
