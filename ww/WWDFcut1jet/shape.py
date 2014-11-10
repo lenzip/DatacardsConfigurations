@@ -57,7 +57,8 @@ path_shape_merged='merged'
 # remove some nuisances defined in mkShapes.py
 #skipSyst = ['metScale_down','metScale_up','muonEfficiency_down','muonEfficiency_up','electronEfficiency_down','electronEfficiency_up']
 #skipSyst = ["leptonEfficiency_up","leptonEfficiency_down","chargeResolution","puW_up","puW_down"]
-skipSyst = ["leptonEfficiency_up","leptonEfficiency_down","chargeResolution","puW_up","puW_down","metScale_up","metScale_down"]
+#skipSyst = ["leptonEfficiency_up","leptonEfficiency_down","chargeResolution","puW_up","puW_down","metScale_up","metScale_down"]
+skipSyst = ["electronEfficiency_down","electronEfficiency_up","muonEfficiency_down","muonEfficiency_up","chargeResolution","puW_up","puW_down","metScale_up","metScale_down"]
 
 # activate/de-activate some nuisances
 shapeFlags = [('CMS_8TeV_ch_res',False)]
@@ -65,5 +66,6 @@ shapeFlags = [('CMS_8TeV_ch_res',False)]
 
 
 
+SpecialSettings = 'WWxsec'
 
 
