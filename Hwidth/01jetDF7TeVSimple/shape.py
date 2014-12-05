@@ -31,7 +31,7 @@ selection='Hwidthmthmll7TeV'
 #range = 'mth-mll-hilospin'
 #range = '(30,80,280,8,0,200)'
 #range = (30,0,300)
-range = 'HwidthSimple-range'
+range = 'HwidthSimple7TeV-range'
 
 # statmode: defined the style of the statistical systematics:
 # - unified: 1 up and 1 down histogram, all bins fluctuating up/down respectively
@@ -62,7 +62,7 @@ path_latino = '/home/amassiro/Latinos/Shape/tree_42x_skim_wwmin/'
 
 # not to performe datadriven estimation: just comment!
 #path_dd = '/home/amassiro/Latinos/Shape/dd/Shape_ggH2j_2012_20fb/'
-#path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
+#path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth_simple'
 
 # other directories
 path_shape_raw='raw'

@@ -18,7 +18,8 @@ To run the limit:
 To prepare:
 
     ls -d  ../../Hwidth/*/ | tr "/" " " | awk '{print "cp ../../Hwidth/"$4"/* "$4"/"}'
-
+    ls -d  ../../Hwidth/*/ | tr "/" " " | awk '{print "cp ../../Hwidth/"$4"/*.py "$4"/"}'
+    ls -d  ../../Hwidth/*/ | tr "/" " " | awk '{print "cp ../../Hwidth/"$4"/*.sh "$4"/"}'
 
 
 

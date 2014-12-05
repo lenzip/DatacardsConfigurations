@@ -2,14 +2,16 @@
 tag='mll'
 
 # luminosity to normalize to
-lumi = 19.365
-chans = ['of_1j']
+lumi = 4.94
+chans = ['of_2j']
 
+# center of mass energy
+energy = '7TeV'
 # dataset to use: Data2012, Data2012A, Data2012B, SI125
-dataset = 'Data2012'
+dataset = 'Data2011'
 
 # set of mc samples: 0j1j, vbf
-mcset = 'Hwidth_01j'
+mcset = 'Hwidth7TeV_2j'
 sigset = 'Hwidth'
 # variable, or formula to use: mll, mjj, 2*unboostedMr
 # for 2D, use TTree::Draw sytax i.e. x:y
@@ -18,7 +20,7 @@ sigset = 'Hwidth'
 variable = 'HwidthSimple'
 
 # selection to apply when
-selection='Hwidthmthmll'
+selection='Hwidthmthmll7TeV'
 
 # shape range. can be an
 # - hard-coded label
@@ -29,7 +31,7 @@ selection='Hwidthmthmll'
 #range = 'mth-mll-hilospin'
 #range = '(30,80,280,8,0,200)'
 #range = (30,0,300)
-range = 'HwidthSimple-range'
+range = 'HwidthSimple7TeV-range'
 
 # statmode: defined the style of the statistical systematics:
 # - unified: 1 up and 1 down histogram, all bins fluctuating up/down respectively
@@ -55,18 +57,18 @@ listSignals = ['ggH_sbi','ggH_b','ggH_s','qqH_sbi','qqH_b','qqH_s',   'ggH','qqH
 # path_dd: data driven estimates
 # path_bdt: location of bdt-trees
 
-#path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin_2j/'
-#path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all/'
-path_latino = '/home/amassiro/Latinos/Shape/tree_skim_all_hwidth/'
-#path_latino = '/home/amassiro/Latinos/Shape/tree_skim_wwmin/'
+path_latino = '/home/amassiro/Latinos/Shape/tree_42x_skim_wwmin/'
+
 
 # not to performe datadriven estimation: just comment!
 #path_dd = '/home/amassiro/Latinos/Shape/dd/Shape_ggH2j_2012_20fb/'
-path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth_simple'
+path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2011_5fb_hwidth'
+
 
 # other directories
 path_shape_raw='raw'
 path_shape_merged='merged'
+
 
 
 floatN = ['WW']
