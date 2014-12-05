@@ -63,6 +63,7 @@ path_latino = '/home/amassiro/Latinos/Shape/tree_42x_skim_wwmin/'
 # not to performe datadriven estimation: just comment!
 #path_dd = '/home/amassiro/Latinos/Shape/dd/Shape_ggH2j_2012_20fb/'
 #path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2012_19fb_hwidth'
+path_dd = '/home/amassiro/Latinos/Shape/dd/shape_2011_5fb_hwidth'
 
 # other directories
 path_shape_raw='raw'
