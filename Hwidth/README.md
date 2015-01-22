@@ -10,8 +10,10 @@ emu
 
 To run the limit:
 
+    see README in
     https://github.com/amassiro/LimitCombine/tree/master/HiggsWidth/test
-
+        - copy from cmsneu the datacards
+        - run the limit
 
 
 
@@ -21,6 +23,9 @@ To prepare:
     ls -d  ../../Hwidth/*/ | tr "/" " " | awk '{print "cp ../../Hwidth/"$4"/*.py "$4"/"}'
     ls -d  ../../Hwidth/*/ | tr "/" " " | awk '{print "cp ../../Hwidth/"$4"/*.sh "$4"/"}'
 
+    cp ../../../dd/shape_2012_19fb_hwidth/*.txt          dd/shape_2012_19fb_hwidth/
+    cp ../../../dd/shape_2012_19fb_hwidth_simple/*.txt   dd/shape_2012_19fb_hwidth_simple/
+    cp ../../../dd/shape_2011_5fb_hwidth/*.txt           dd/shape_2011_5fb_hwidth/
 
 
 To smear ntuples:
