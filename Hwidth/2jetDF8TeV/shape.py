@@ -35,6 +35,7 @@ range = 'Hwidth-range'
 # - unified: 1 up and 1 down histogram, all bins fluctuating up/down respectively
 # - bybin: 2 histograms per bin, where the corresponding bin is fluctuated up/down
 statmode = 'unified'
+#statmode = 'bybin'
 
 # label used for the plot's x-axis
 #xlabel='m_{ll} - m_{tH}'
@@ -69,6 +70,7 @@ path_shape_raw='raw'
 path_shape_merged='merged'
 
 
+#floatN = ['WW']
 
 
 # remove some nuisances defined in mkShapes.py
