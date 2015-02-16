@@ -55,7 +55,7 @@ floatN = ['WW']
 path_latino = '/data/lviliani/skim/tree_skim_wwmin_pth/'
 #path_latino = '/afs/cern.ch/work/m/maiko/private/Tree/tree/'
 
-path_dd = '/afs/cern.ch/user/l/lenzip/work/ww/differential/CMSSW_6_1_1/src/DatacardsConfigurations/pth/mll-mth_8TeV_pthincl/dd/'
+path_dd = 'dd/'
 
 # name nuisance nominal simil-template
 #MCextrap = [('CMS_8TeV_hww_Top0jet_stat', 'Top0jet', 'CHITOP-Top0jet')]
