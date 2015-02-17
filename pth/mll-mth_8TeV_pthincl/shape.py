@@ -10,7 +10,7 @@ chans=['of_pthincl']
 dataset='Data2012'
 
 # set of mc samples: 0j1j, vbf
-mcset='0j1j-differential'
+mcset='0j1j-differential2'
 
 # variable, or formula to use: mll, mjj, 2*unboostedMr
 # for 2D, use TTree::Draw sytax i.e. x:y
@@ -44,7 +44,7 @@ xlabel='m_{ll} - m_{tH}'
 # rebin=10
 rebin=1
 
-floatN = ['WW']
+floatN = ['WWBin0', 'WWBin1', 'WWBin2', 'WWBin3', 'WWBin4', 'WWBin5',]
 
 # directories
 #    path_latino: latino's files

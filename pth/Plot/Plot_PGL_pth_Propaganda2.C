@@ -5,7 +5,7 @@
 #include "TFile.h"
 
 #include "PlotVHqqHggH.C"
-
+#include <sstream>
 
 
 //---- Filter bins ----
@@ -79,8 +79,9 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
 //  TString folder = Form("sig/");
 //  TString cutNameBefore = Form("sig/%shisto_",nameChannel.Data());
 
- TString folder = Form("init/");
- TString cutNameBefore = Form("histo_");
+ TString folder = Form("sig/");
+ TString cutNameBefore = Form("sig/of_pthincl/histo_");
+ //TString cutNameBefore = Form("histo_");
 
  std::cout << " nameChannel   = " << nameChannel.Data() << std::endl;
  std::cout << " cutNameBefore = " << cutNameBefore.Data() << std::endl;
@@ -106,7 +107,9 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
       f[0] =
         new
         TFile (Form
-               ("../mll-mth_8TeV_pthincl/datacards/shapes/hww-19.47fb.mH125.of_pthincl_shape.root"));
+               ("../mll-mth_8TeV_pthincl/postFit/Hwidth-pthincl-of-error-signalInjection_testtoy.root"));
+               //("../mll-mth_8TeV_pthincl/postFit/Hwidth-pthincl-of-error-signalInjection.root"));
+               //("../mll-mth_8TeV_pthincl/datacards/shapes/hww-19.47fb.mH125.of_pthincl_shape.root"));
       doSignalInjection = true;
     }
   else if (which == 1)
@@ -130,7 +133,7 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
  //  hs->addLabel("#splitline{      WHSC}{     #sqrt{s} = 13 TeV}");
   
  hs->setLumi(19.4);
- hs->addLabel("#splitline{     Hwidth}{     #sqrt{s} = 8 TeV}");
+ hs->addLabel("#splitline{     p_{T_{H}}}{     #sqrt{s} = 8 TeV}");
 //  
  TString name;
  
@@ -414,7 +417,7 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
    vectNormalizationBkg.push_back(0.377);
    std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;
   
-   name = Form("%sWW%s",cutNameBefore.Data(),cutNameAfter.Data());
+   name = Form("%sWWBin0%s",cutNameBefore.Data(),cutNameAfter.Data());
    vectTHBkg.push_back ( FilterBins(binsToSelect, (TH1F*) f[iFile]->Get(name)) );
    vectNameBkg.push_back ("WW");
    vectColourBkg.push_back(851);
@@ -422,6 +425,51 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
    vectScaleBkg.push_back(1.0000);
    vectNormalizationBkg.push_back(2.256);
    std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;
+
+   name = Form("%sWWBin1%s",cutNameBefore.Data(),cutNameAfter.Data());
+   vectTHBkg.push_back ( FilterBins(binsToSelect, (TH1F*) f[iFile]->Get(name)) );
+   vectNameBkg.push_back ("WW");
+   vectColourBkg.push_back(851);
+   vectSystBkg.push_back(0.00);
+   vectScaleBkg.push_back(1.0000);
+   vectNormalizationBkg.push_back(2.256);
+   std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;
+
+   name = Form("%sWWBin2%s",cutNameBefore.Data(),cutNameAfter.Data());
+   vectTHBkg.push_back ( FilterBins(binsToSelect, (TH1F*) f[iFile]->Get(name)) );
+   vectNameBkg.push_back ("WW");
+   vectColourBkg.push_back(851);
+   vectSystBkg.push_back(0.00);
+   vectScaleBkg.push_back(1.0000);
+   vectNormalizationBkg.push_back(2.256);
+   std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;
+
+   name = Form("%sWWBin3%s",cutNameBefore.Data(),cutNameAfter.Data());
+   vectTHBkg.push_back ( FilterBins(binsToSelect, (TH1F*) f[iFile]->Get(name)) );
+   vectNameBkg.push_back ("WW");
+   vectColourBkg.push_back(851);
+   vectSystBkg.push_back(0.00);
+   vectScaleBkg.push_back(1.0000);
+   vectNormalizationBkg.push_back(2.256);
+   std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;
+  
+   name = Form("%sWWBin4%s",cutNameBefore.Data(),cutNameAfter.Data());
+   vectTHBkg.push_back ( FilterBins(binsToSelect, (TH1F*) f[iFile]->Get(name)) );
+   vectNameBkg.push_back ("WW");
+   vectColourBkg.push_back(851);
+   vectSystBkg.push_back(0.00);
+   vectScaleBkg.push_back(1.0000);
+   vectNormalizationBkg.push_back(2.256);
+   std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;
+ 
+   name = Form("%sWWBin5%s",cutNameBefore.Data(),cutNameAfter.Data());
+   vectTHBkg.push_back ( FilterBins(binsToSelect, (TH1F*) f[iFile]->Get(name)) );
+   vectNameBkg.push_back ("WW");
+   vectColourBkg.push_back(851);
+   vectSystBkg.push_back(0.00);
+   vectScaleBkg.push_back(1.0000);
+   vectNormalizationBkg.push_back(2.256);
+   std::cout << "I'm here: " << WHEREAMI << std::endl; WHEREAMI++;  
    
 //    name = Form("%sggWW%s",cutNameBefore.Data(),cutNameAfter.Data());
 //    if (f[iFile]->GetListOfKeys()->Contains(name)) {
@@ -463,25 +511,24 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
    }*/
    
    ///==== data (end)  ====
-   
+/*   
    if (what == 1) {
     hs->setBlindBinSx(4);
-//    hs->setBlindBinSx(4);
-//    hs->setBlindBinDx(10);
     hs->setBlindBinDx(0);
    } else {
     hs->setBlindBinSx(7);
     hs->setBlindBinDx(0);
    }
-    
+*/    
+  
    
    hs->setCutSx(-999,">");
    hs->setCutDx(-999,"<");
    
-   //name = Form("%s%smodel_errs",folder.Data(),nameChannel.Data()); 
-   //std::cout << " name = " << name.Data() << std::endl;  
+   name = Form("%s%smodel_errs",folder.Data(),nameChannel.Data()); 
+   std::cout << " name = " << name.Data() << std::endl;  
    
-   //hs->set_ErrorBand( *(FilterBins(binsToSelect, (TGraphAsymmErrors*) f[iFile]->Get(name))) );  
+   hs->set_ErrorBand( *(FilterBins(binsToSelect, (TGraphAsymmErrors*) f[iFile]->Get(name))) );  
   }
    
  }
@@ -583,19 +630,21 @@ void Plot_PGL_pth_Propaganda2(int channel, int what) {
  //----  canvas, rebin, div, shadow, background subtracted canvas ----
  hs->Draw(c1,1,true,true,c1bis);
 
- const char *namefile = "mT";
-  if (what == 1)
-    {
-      namefile = "mll";
+ std::stringstream namefile;
+  if (what == 0){
+    namefile << "mTBin" << channel; 
+  }  
+  else {
+      namefile <<  "mllBin" << channel;
     }
 
-  c1->Print (Form ("../mll-mth_8TeV_pthincl/%s.pdf", namefile));
-  c1->Print (Form ("../mll-mth_8TeV_pthincl/%s.png", namefile));
-  c1->Print (Form ("../mll-mth_8TeV_pthincl/%s.eps", namefile));
+  c1->Print (Form ("../mll-mth_8TeV_pthincl/%s.pdf", namefile.str().c_str()));
+  c1->Print (Form ("../mll-mth_8TeV_pthincl/%s.png", namefile.str().c_str()));
+  c1->Print (Form ("../mll-mth_8TeV_pthincl/%s.eps", namefile.str().c_str()));
 
-  c1bis->Print (Form ("../mll-mth_8TeV_pthincl/bkgSub_%s.pdf", namefile));
-  c1bis->Print (Form ("../mll-mth_8TeV_pthincl/bkgSub_%s.png", namefile));
-  c1bis->Print (Form ("../mll-mth_8TeV_pthincl/bkgSub_%s.eps", namefile));  
+  c1bis->Print (Form ("../mll-mth_8TeV_pthincl/bkgSub_%s.pdf", namefile.str().c_str()));
+  c1bis->Print (Form ("../mll-mth_8TeV_pthincl/bkgSub_%s.png", namefile.str().c_str()));
+  c1bis->Print (Form ("../mll-mth_8TeV_pthincl/bkgSub_%s.eps", namefile.str().c_str()));  
  
 }
 
