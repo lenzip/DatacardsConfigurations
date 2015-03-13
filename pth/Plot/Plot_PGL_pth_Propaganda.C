@@ -79,8 +79,8 @@ void Plot_PGL_pth_Propaganda(const char* channel, int what) {
 //  TString folder = Form("sig/");
 //  TString cutNameBefore = Form("sig/%shisto_",nameChannel.Data());
 
- TString folder = Form("init/");
- TString cutNameBefore = Form("init/%shisto_",nameChannel.Data());
+ TString folder = Form("sig/");
+ TString cutNameBefore = Form("sig/%shisto_",nameChannel.Data());
 
  std::cout << " nameChannel   = " << nameChannel.Data() << std::endl;
  std::cout << " cutNameBefore = " << cutNameBefore.Data() << std::endl;
