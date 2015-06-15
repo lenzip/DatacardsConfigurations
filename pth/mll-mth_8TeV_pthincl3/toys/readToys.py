@@ -6,18 +6,17 @@ from array import *
 import copy 
 import numpy 
 
-edges = numpy.array([0., 15., 45., 87., 125., 162., 200.])
-
-def makePlot(central, r, name, syst=[]):
+def makePlot(central, r, stat, name, syst=[]):
   rcopy = copy.deepcopy(r)
   if syst != []:
     for i in range(len(r)):
       rcopy[i] += syst[i]
 
+  edges = numpy.array([0., 15., 45., 87., 125., 162., 200.])
   h = TH1F(name, name, 6, edges)
   for i in range(1, 7):
     h.SetBinContent(i, rcopy[i-1]*central[i-1])
-    #h.SetBinError(i, stat[i-1]*central[i-1])
+    h.SetBinError(i, stat[i-1]*central[i-1])
 
   return h
 
@@ -46,47 +45,95 @@ tree.SetBranchAddress("rBin3", rBin3)
 tree.SetBranchAddress("rBin4", rBin4)
 tree.SetBranchAddress("rBin5", rBin5)
 
-profile = TProfile("profileFit", "profileFit", 6, edges)
+colors=[2,4,6,8,5,1]
+hcentrals = []
+hpulls = []
 
-Hfit = [0., 0., 0., 0., 0., 0.]
-samplesFit = ['ggH', "WH", "ZH", 'qqH']
-Htrue = [0., 0., 0., 0., 0., 0.]
-samplesTrue = ['ggH', "WH", "ZH",'qqH']
+ggH = [0., 0., 0., 0., 0., 0.]
 
 for i in range(0, 6):
-  for o in samplesFit:
-    name = "histo_"+o+"Bin"+str(i)
-    h = shapes.Get(name)
-    Hfit[i]+=h.Integral()
-  for j in samplesTrue:
-    name = "histo_"+j+"Bin"+str(i)
-    h = shapes.Get(name)
-    Htrue[i]+=h.Integral()
+  namegg="histo_ggHBin"+str(i)
+  h = shapes.Get(namegg)
+  ggH[i] = h.Integral()
 
-rTrue = [1.,1.,1.,1.,1.,1.]    
-HTrue = makePlot(Htrue, rTrue, "Htrue")
-HTrue.Write()
+leg = TLegend(0.8, 0.7, 1, 1)
+leg.SetFillStyle(4000)
+leg.SetFillColor(0)
+for i in range(6):
+  hc = TH1F("rBin"+ str(i), "rBin"+ str(i), 30, -4, 5)
+  hc.SetMarkerColor(colors[i])
+  hc.SetLineColor(colors[i])
+  hc.SetLineWidth(2)
+  leg.AddEntry(hc, "#mu_"+str(i), "l")
+  hp = TH1F("PullrBin"+ str(i), "Pull rBin"+ str(i), 50, -5, 5)
+  hp.SetMarkerColor(colors[i])
+  hp.SetLineColor(colors[i])
+  hp.SetLineWidth(2)
 
-for itoy in range(2000):
+  hcentrals.append(hc)
+  hpulls.append(hp)
+
+for itoy in range(1900):
   print "############## TOY", itoy 
   r=[0., 0., 0., 0., 0., 0.]
-  tree.GetEntry(itoy)
+  errStat=[0., 0., 0., 0., 0., 0.]
   for ibin in range(6):
+    icentral = itoy*14+(ibin*2)
+    idown    = icentral + 1
+    iup      = icentral + 2
+    tree.GetEntry(icentral)
     central = eval("rBin"+str(ibin)+"[0]")
+    tree.GetEntry(idown)
+    down    = eval("rBin"+str(ibin)+"[0]")
+    tree.GetEntry(iup)
+    up      = eval("rBin"+str(ibin)+"[0]")
+    errDown = down-central
+    errUp   = up - central 
+    print "rBin"+str(ibin),"=", central," +/- ", errUp, errDown 
+    hcentrals[ibin].Fill(central)
+    if abs(errUp) > 0. and abs(errDown) > 0.:
+      pull = (central - 1.)/abs(errUp) if central - 1. > 0 else (central - 1.)/abs(errDown)
+      hpulls[ibin].Fill(pull)  
     r[ibin] =  central
-  #check for parameters at limit  
-  for ir in r:
-    print ir
-    if abs(ir) == 10.:
-      print "skipping this toy because of parameter at limit"
-      continue
-  HfitThisToy = makePlot(Hfit, r, "HcentralToy"+str(itoy))
-  for ibin in range(6):
-    profile.Fill(HfitThisToy.GetBinCenter(ibin+1), HfitThisToy.GetBinContent(ibin+1))
+    errStat[ibin] = max(abs(errUp), abs(errDown))
+  ggHthisToy = makePlot(ggH, r, errStat, "ggHcentralToy"+str(itoy))
   out.cd()
-  HfitThisToy.Write()
+  ggHthisToy.Write()
 
-profile.Write()
+
+cFit = TCanvas()
+cFit.cd()
+
+for ibin in range(6):
+  if ibin == 0:
+    hcentrals[ibin].Draw()
+  else:
+    hcentrals[ibin].Draw("sames")
+leg.Draw("sames")
+
+cFit.Write()
+
+cPull = TCanvas()
+cPull.cd()
+
+for ibin in range(6):
+  if (ibin==0):
+    hpulls[ibin].Fit("gaus", "", "")
+  else:  
+    hpulls[ibin].Fit("gaus", "", "sames")
+  hpulls[ibin].FindObject("gaus").SetLineColor(hpulls[ibin].GetLineColor() )#SetNameTitle("Fit"+str(ibin), "Fit"+str(ibin))
+  hpulls[ibin].FindObject("gaus").SetLineWidth(2)
+    
+cPull.Write()
+
+  #if ibin == 0:
+  #  hpulls[ibin].Draw()
+  #else:
+  #  hpulls[ibin].Draw("sames")
+leg.Draw("sames")
+
+
+
 
 a=raw_input("Done")
 
