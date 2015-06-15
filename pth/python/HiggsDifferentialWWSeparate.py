@@ -1,6 +1,6 @@
 from HiggsAnalysis.CombinedLimit.PhysicsModel import *
 
-class DifferentialFiducialWW( PhysicsModel ):
+class DifferentialFiducialWWSeparate( PhysicsModel ):
     ''' Model used to unfold differential distributions '''
 
     def __init__(self):
@@ -41,16 +41,22 @@ class DifferentialFiducialWW( PhysicsModel ):
         for iBin in range(0,self.nBin):
             print "Adding variable rBin", iBin
             self.modelBuilder.doVar("rBin%d[1, %s,%s]" % (iBin, self.Range[0],self.Range[1]))
+            self.modelBuilder.doVar("rVBFBin%d[1, %s,%s]" % (iBin, self.Range[0],self.Range[1]))
             self.modelBuilder.out.var("rBin%d" % (iBin)).setConstant(False)
+            self.modelBuilder.out.var("rVBFBin%d" % (iBin)).setConstant(False)
 
             if iBin>=0:
                 POIs+="rBin%d,"%iBin
+                POIs+="rVBFBin%d,"%iBin
                 if self.debug>0:print "Added Bin%d to the POIs"%iBin
         POIs = POIs[:-1] # remove last comma
         self.modelBuilder.doSet("POI",POIs)
     def getYieldScale(self,bin,process):
         if not self.DC.isSignal[process]: return 1
-        return re.sub("^(ggH|qqH|WH|ZH|ttH|bbH)","r", process)
+        if "ggH" in process or "WH" in process or "ZH" in process or "ttH" in process or "bbH" in process :
+          return re.sub("^(ggH|WH|ZH|ttH|bbH)","r", process)
+        else: 
+          return re.sub("^(qqH)","rVBF", process)
 
-differentialFiducialWW=DifferentialFiducialWW()
+differentialFiducialWWSeparate=DifferentialFiducialWWSeparate()
 
