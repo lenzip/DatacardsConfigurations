@@ -2971,9 +2971,10 @@ class PlotVHqqHggH {
 
                 //      rref->GetYaxis()->SetRangeUser(TMath::Max(0.,1.-absmax), absmax+1.);
                 //      rref->GetYaxis()->SetRangeUser(TMath::Max(0.,1.-absmax), TMath::Min(10.,absmax+1.));
-//                 rref->GetYaxis()->SetRangeUser(0.5, 1.5);
+               rref->GetYaxis()->SetRangeUser(0.5, 1.5);
+               rref->GetYaxis()->SetNdivisions(502);
 // 
-                rref->GetYaxis()->SetRangeUser(0., 3.);
+//                rref->GetYaxis()->SetRangeUser(0., 3.);
                 //              
 //                 rref->GetYaxis()->SetRangeUser(0., 2.);
                 
@@ -2988,6 +2989,7 @@ class PlotVHqqHggH {
                 _titleOffset = 1.6;
                 AxisFonts(rref->GetXaxis(), "x", hstack->GetXaxis()->GetTitle());
                 AxisFonts(rref->GetYaxis(), "y", hstack->GetYaxis()->GetTitle());
+                rref->GetYaxis()->SetNdivisions(502);
                 _titleOffset = temp_titleOffset;
                 rref->GetXaxis()->SetRangeUser(summed->GetXaxis()->GetBinLowEdge(1), summed->GetXaxis()->GetBinLowEdge(_nbins+1));
                 std::cout << "==========================================================" << std::endl;

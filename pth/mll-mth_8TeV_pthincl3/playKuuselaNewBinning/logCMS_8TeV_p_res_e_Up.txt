@@ -1,0 +1,28 @@
+Running Minos for POI 
+Real time 0:00:08, CP time 7.970
+
+Running Minos for POI 
+Real time 0:00:08, CP time 7.970
+
+Running Minos for POI 
+Real time 0:00:08, CP time 7.970
+
+Running Minos for POI 
+Real time 0:00:08, CP time 7.970
+
+Running Minos for POI 
+Real time 0:00:08, CP time 7.970
+
+Running Minos for POI 
+Real time 0:00:08, CP time 7.970
+
+
+ --- MultiDimFit ---
+best fit parameter values and profile-likelihood uncertainties: 
+   rBin0 :  +0.87545365   -0.40651944/+0.42153896 (68%)
+   rBin1 :  +1.11217356   -0.29020645/+0.29543532 (68%)
+   rBin2 :  +0.97578555   -0.42132617/+0.43923549 (68%)
+   rBin3 :  +0.86615026   -0.83044098/+0.87400331 (68%)
+   rBin4 :  +1.10020936   -1.17697416/+1.32345737 (68%)
+   rBin5 :  +0.95493394   -0.94594110/+1.09732208 (68%)
+Done in 0.52 min (cpu), 0.53 min (real)
