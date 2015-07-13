@@ -30,7 +30,7 @@ def makePlot(central, r, stat, name, syst=[]):
     for i in range(len(r)):
       rcopy[i] += syst[i]
 
-  edges = numpy.array([0., 15., 45., 87., 125., 162., 200.])
+  edges = numpy.array([0., 15., 45., 85., 125., 165., 200.])
   h = TH1F(name, name, 6, edges)
   for i in range(1, 7):
     h.SetBinContent(i, rcopy[i-1]*central[i-1])
