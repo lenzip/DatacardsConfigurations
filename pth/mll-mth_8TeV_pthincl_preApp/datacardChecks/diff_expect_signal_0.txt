@@ -1,0 +1,145 @@
+[?1034hname                                              b-only fit            s+b fit         rho
+CMS_8TeV_btagsf                               -0.000026, 0.973240    * +0.010685, 1.480679*   +0.016702
+CMS_8TeV_eff_l                                +0.001843, 0.972424    * +0.045019, 1.469776*   -0.168507
+CMS_8TeV_hww_DYTT_of_pthincl_stat_bin1        +0.000028, 1.016988     -0.001162, 0.994109   +0.001655
+CMS_8TeV_hww_DYTT_of_pthincl_stat_shape      * +0.001099, 0.580041*    * +0.016373, 0.594525*   -0.052369
+CMS_8TeV_hww_FakeRate                         +0.000722, 0.971190    * +0.023782, 0.879632*   -0.061319
+CMS_8TeV_hww_Top0jet_fTW                     ! -0.000362, 0.408565!    ! -0.008347, 0.402428!   -0.028613
+CMS_8TeV_hww_Top0jet_of_pthincl_stat_shape     ! +0.000313, 0.319038!    ! +0.002814, 0.310569!   -0.016485
+CMS_8TeV_hww_Top0jet_pthincl_of_pthincl_extr      +0.001782, 1.056439     +0.002200, 0.974587   +0.018016
+CMS_8TeV_hww_Top0jet_pthincl_of_pthincl_stat      -0.000207, 1.013929     +0.000838, 0.991790   +0.006535
+CMS_8TeV_hww_Topge1jetBin0_fTW                +0.000183, 0.982655     +0.000990, 0.987032   +0.001842
+CMS_8TeV_hww_Topge1jetBin0_of_pthincl_stat_shape     * +0.000373, 0.696709*    * +0.007196, 0.701457*   +0.004637
+CMS_8TeV_hww_Topge1jetBin0_pthincl_of_pthincl_extr      +0.001990, 0.939849     -0.002655, 0.913353   +0.001232
+CMS_8TeV_hww_Topge1jetBin0_pthincl_of_pthincl_stat      -0.001202, 1.034486     -0.000564, 0.989989   +0.000281
+CMS_8TeV_hww_Topge1jetBin1_fTW                -0.000094, 0.973301     -0.000660, 0.979813   +0.006872
+CMS_8TeV_hww_Topge1jetBin1_of_pthincl_stat_shape     * -0.000028, 0.726690*    * +0.004540, 0.733880*   -0.015717
+CMS_8TeV_hww_Topge1jetBin1_pthincl_of_pthincl_extr     * +0.000714, 0.723514*    * -0.008380, 0.696103*   +0.049176
+CMS_8TeV_hww_Topge1jetBin1_pthincl_of_pthincl_stat     * +0.000047, 1.114709*     -0.000764, 0.992366   +0.003149
+CMS_8TeV_hww_Topge1jetBin2_fTW                -0.000017, 0.964647     +0.004225, 0.959493   +0.002192
+CMS_8TeV_hww_Topge1jetBin2_of_pthincl_stat_shape     * -0.000097, 0.544176*    * -0.000641, 0.542550*   -0.025035
+CMS_8TeV_hww_Topge1jetBin2_pthincl_of_pthincl_extr      +0.000337, 1.048871    * +0.016205, 0.576893*   +0.050235
+CMS_8TeV_hww_Topge1jetBin2_pthincl_of_pthincl_stat      +0.000844, 1.015235     +0.001076, 0.993061   +0.001914
+CMS_8TeV_hww_Topge1jetBin3_fTW                +0.000013, 0.973623     +0.002019, 0.957795   +0.013383
+CMS_8TeV_hww_Topge1jetBin3_of_pthincl_stat_shape     * -0.000088, 0.579591*    * +0.011223, 0.584328*   +0.004282
+CMS_8TeV_hww_Topge1jetBin3_pthincl_of_pthincl_extr      +0.000327, 0.962125    * -0.003996, 0.632691*   +0.006799
+CMS_8TeV_hww_Topge1jetBin3_pthincl_of_pthincl_stat      +0.000702, 1.033214     -0.000279, 0.992997   +0.000289
+CMS_8TeV_hww_Topge1jetBin4_fTW                +0.000045, 1.000184     +0.000032, 0.969123   +0.001368
+CMS_8TeV_hww_Topge1jetBin4_of_pthincl_stat_shape     * -0.000023, 0.603180*    * -0.000283, 0.590239*   -0.010990
+CMS_8TeV_hww_Topge1jetBin4_pthincl_of_pthincl_extr     ! +0.000769, 1.513348!    * -0.001476, 0.707663*   -0.004096
+CMS_8TeV_hww_Topge1jetBin4_pthincl_of_pthincl_stat      +0.000763, 1.056680     -0.000124, 0.992301   -0.000262
+CMS_8TeV_hww_Topge1jetBin5_fTW                +0.000098, 1.001025     +0.001970, 0.975313   +0.001809
+CMS_8TeV_hww_Topge1jetBin5_of_pthincl_stat_shape     * -0.000028, 0.638908*    * +0.005351, 0.637175*   -0.016083
+CMS_8TeV_hww_Topge1jetBin5_pthincl_of_pthincl_extr     * +0.001220, 1.338584*    * +0.000962, 0.633155*   +0.011664
+CMS_8TeV_hww_Topge1jetBin5_pthincl_of_pthincl_stat     * +0.001771, 1.176183*     +0.000124, 0.992179   +0.000653
+CMS_8TeV_hww_VVV_of_pthincl_stat_bin1         +0.000034, 1.023373     +0.000006, 0.994435   +0.000014
+CMS_8TeV_hww_VVV_of_pthincl_stat_shape       * +0.000084, 0.890257*    * +0.001282, 0.825816*   -0.003224
+CMS_8TeV_hww_VV_of_pthincl_stat_bin1          +0.000044, 1.089672     -0.000080, 0.994451   -0.000721
+CMS_8TeV_hww_VV_of_pthincl_stat_shape         +0.001138, 1.017335     +0.002090, 0.960692   +0.004205
+CMS_8TeV_hww_VgS_of_pthincl_stat_bin1         -0.000015, 1.058852     +0.012859, 0.993684   -0.009981
+CMS_8TeV_hww_VgS_of_pthincl_stat_shape       ! +0.000462, 0.383295!    ! +0.618853, 0.317875!   -0.071893
+CMS_8TeV_hww_Vg_of_pthincl_stat_bin1          +0.000011, 0.989178     +0.002059, 0.994443   -0.002102
+CMS_8TeV_hww_Vg_of_pthincl_stat_shape        * +0.001302, 0.898810*     -0.068901, 0.904817   +0.078611
+CMS_8TeV_hww_WHBin0_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000002, 0.994458   -0.000084
+CMS_8TeV_hww_WHBin0_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000015, 0.994428   +0.000404
+CMS_8TeV_hww_WHBin1_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000001, 0.994457   -0.000016
+CMS_8TeV_hww_WHBin1_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000010, 0.994469   -0.000021
+CMS_8TeV_hww_WHBin2_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000003, 0.994463   -0.000108
+CMS_8TeV_hww_WHBin2_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000059, 0.994405   +0.001654
+CMS_8TeV_hww_WHBin3_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000005, 0.994431   -0.000174
+CMS_8TeV_hww_WHBin3_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000034, 0.994417   +0.000832
+CMS_8TeV_hww_WHBin4_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000001, 0.994457   -0.000074
+CMS_8TeV_hww_WHBin4_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000004, 0.994446   +0.000107
+CMS_8TeV_hww_WHBin5_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000002, 0.994457   -0.000104
+CMS_8TeV_hww_WHBin5_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000003, 0.994461   +0.000015
+CMS_8TeV_hww_WJet_FakeRate_e_shape            -0.001271, 1.064784    * +0.002010, 0.744077*   +0.030065
+CMS_8TeV_hww_WJet_FakeRate_m_shape           * -0.000307, 0.892062*    * -0.038256, 0.624952*   +0.226406
+CMS_8TeV_hww_WJet_of_pthincl_stat_bin1        +0.000068, 1.008733     +0.000849, 0.994315   -0.001937
+CMS_8TeV_hww_WJet_of_pthincl_stat_shape      ! +0.000606, 0.268622!    ! -0.000803, 0.262416!   +0.034826
+CMS_8TeV_hww_WWBin0_of_pthincl_stat_bin1      +0.000446, 1.091113     +0.000001, 0.994465   -0.000014
+CMS_8TeV_hww_WWBin0_of_pthincl_stat_shape     * +0.000612, 0.629825*    * +0.015020, 0.635542*   -0.000519
+CMS_8TeV_hww_WWBin1_of_pthincl_stat_bin1      +0.000149, 0.990482     -0.000000, 0.994462   +0.000006
+CMS_8TeV_hww_WWBin1_of_pthincl_stat_shape     * +0.000479, 0.783467*    * +0.001301, 0.789200*   -0.001616
+CMS_8TeV_hww_WWBin2_of_pthincl_stat_bin1      +0.000166, 1.015381     -0.000002, 0.994463   +0.000007
+CMS_8TeV_hww_WWBin2_of_pthincl_stat_shape      -0.000053, 0.916025    * -0.000713, 0.889015*   -0.000538
+CMS_8TeV_hww_WWBin3_of_pthincl_stat_bin1      +0.000140, 1.065770     -0.000001, 0.994466   -0.000021
+CMS_8TeV_hww_WWBin3_of_pthincl_stat_shape     * -0.000103, 0.836045*    * +0.003854, 0.835443*   -0.012242
+CMS_8TeV_hww_WWBin4_of_pthincl_stat_bin1     * +0.000260, 1.106734*     -0.000000, 0.994465   +0.000003
+CMS_8TeV_hww_WWBin4_of_pthincl_stat_shape     * -0.000050, 0.794536*    * +0.002836, 0.774360*   -0.011698
+CMS_8TeV_hww_WWBin5_of_pthincl_stat_bin1      +0.000545, 1.011702     -0.000000, 0.994468   -0.000015
+CMS_8TeV_hww_WWBin5_of_pthincl_stat_shape     * -0.000158, 0.578568*    * +0.001330, 0.574053*   -0.013521
+CMS_8TeV_hww_ZHBin0_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000002, 0.994459   +0.000006
+CMS_8TeV_hww_ZHBin0_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000005, 0.994442   +0.000137
+CMS_8TeV_hww_ZHBin1_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000001, 0.994459   +0.000006
+CMS_8TeV_hww_ZHBin1_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000027, 0.994486   -0.000520
+CMS_8TeV_hww_ZHBin2_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000003, 0.994463   -0.000084
+CMS_8TeV_hww_ZHBin2_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000018, 0.994424   +0.000542
+CMS_8TeV_hww_ZHBin3_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000001, 0.994467   -0.000054
+CMS_8TeV_hww_ZHBin3_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000002, 0.994462   -0.000026
+CMS_8TeV_hww_ZHBin4_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000000, 0.994455   -0.000025
+CMS_8TeV_hww_ZHBin4_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000000, 0.994458   +0.000000
+CMS_8TeV_hww_ZHBin5_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000001, 0.994461   -0.000071
+CMS_8TeV_hww_ZHBin5_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000001, 0.994459   +0.000033
+CMS_8TeV_hww_ggHBin0_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000006, 0.994459   -0.000102
+CMS_8TeV_hww_ggHBin0_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000040, 0.994445   +0.001429
+CMS_8TeV_hww_ggHBin1_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000025, 0.994468   +0.000216
+CMS_8TeV_hww_ggHBin1_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000033, 0.994465   +0.000020
+CMS_8TeV_hww_ggHBin2_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000027, 0.994463   -0.000794
+CMS_8TeV_hww_ggHBin2_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000064, 0.994446   +0.001894
+CMS_8TeV_hww_ggHBin3_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000016, 0.994464   -0.000462
+CMS_8TeV_hww_ggHBin3_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000037, 0.994442   +0.000978
+CMS_8TeV_hww_ggHBin4_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000006, 0.994454   -0.000219
+CMS_8TeV_hww_ggHBin4_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000026, 0.994437   +0.000806
+CMS_8TeV_hww_ggHBin5_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000005, 0.994456   -0.000265
+CMS_8TeV_hww_ggHBin5_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000024, 0.994443   +0.000940
+CMS_8TeV_hww_ggWW_of_pthincl_stat_bin1        +0.000094, 1.032452     +0.000263, 0.994371   -0.002161
+CMS_8TeV_hww_ggWW_of_pthincl_stat_shape      * +0.000270, 0.803010*    * -0.002717, 0.797194*   +0.029699
+CMS_8TeV_hww_qqHBin0_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000001, 0.994458   -0.000038
+CMS_8TeV_hww_qqHBin0_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000001, 0.994457   +0.000048
+CMS_8TeV_hww_qqHBin1_of_pthincl_stat_bin1      +0.000000, 0.989143     +0.000002, 0.994463   -0.000013
+CMS_8TeV_hww_qqHBin1_of_pthincl_stat_shape      +0.000000, 0.989143     -0.000002, 0.994457   -0.000009
+CMS_8TeV_hww_qqHBin2_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000003, 0.994463   -0.000126
+CMS_8TeV_hww_qqHBin2_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000008, 0.994455   +0.000221
+CMS_8TeV_hww_qqHBin3_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000003, 0.994453   -0.000095
+CMS_8TeV_hww_qqHBin3_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000011, 0.994455   +0.000294
+CMS_8TeV_hww_qqHBin4_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000001, 0.994463   -0.000047
+CMS_8TeV_hww_qqHBin4_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000005, 0.994456   +0.000133
+CMS_8TeV_hww_qqHBin5_of_pthincl_stat_bin1      +0.000000, 0.989143     -0.000002, 0.994457   -0.000046
+CMS_8TeV_hww_qqHBin5_of_pthincl_stat_shape      +0.000000, 0.989143     +0.000004, 0.994457   +0.000170
+CMS_8TeV_met                                 ! -0.000279, 0.285332!    ! +0.011774, 0.257815!   +0.000815
+CMS_8TeV_norm_DYTT                            +0.000417, 1.072651    * -0.021951, 0.861155*   +0.036221
+CMS_8TeV_norm_Vg                              +0.000383, 1.005064     +0.077458, 0.976097   -0.079260
+CMS_8TeV_p_res_e                             ! -0.000058, 0.389401!    ! +0.011633, 0.371577!   +0.016282
+CMS_8TeV_p_scale_e                           ! +0.000372, 0.355184!    ! -0.002414, 0.374471!   +0.141524
+CMS_8TeV_p_scale_j                           * +0.000150, 0.848989*    * -0.000771, 1.181090*   -0.012267
+CMS_8TeV_p_scale_m                           * +0.000282, 0.551600*    * -0.013524, 0.600691*   +0.073482
+CMS_8TeV_p_scale_met                         ! +0.000504, 0.446605!    ! -0.005111, 0.457849!   -0.119193
+CMS_norm_pthincl_WWBin0                      ! +0.000144, 0.086380!    ! -0.008947, 0.081478!   +0.009499
+CMS_norm_pthincl_WWBin1                      ! +0.000065, 0.104393!    ! -0.007294, 0.108511!   -0.009735
+CMS_norm_pthincl_WWBin2                      * +0.000206, 0.601443*    ! -0.024800, 0.371436!   -0.044674
+CMS_norm_pthincl_WWBin3                      * +0.000353, 1.438479*    * -0.008283, 0.646384*   -0.008516
+CMS_norm_pthincl_WWBin4                      * +0.000748, 1.498323*    * +0.000358, 0.647928*   -0.001349
+CMS_norm_pthincl_WWBin5                      * +0.000999, 1.451811*    * -0.001143, 0.528864*   -0.012870
+Gen_nlo_of_pthincl_8TeV_WWBin0                +0.000000, 0.989644    * -0.000004, 0.839625*   -0.000787
+Gen_nlo_of_pthincl_8TeV_WWBin1                +0.000000, 0.988765     +0.000010, 1.035253   -0.002004
+Gen_nlo_of_pthincl_8TeV_WWBin2                +0.000000, 0.988389     -0.000062, 0.948956   -0.000660
+Gen_nlo_of_pthincl_8TeV_WWBin3                +0.000000, 0.991863     +0.000021, 0.905267   -0.000410
+Gen_nlo_of_pthincl_8TeV_WWBin4                +0.000000, 0.992607     +0.000008, 0.982973   -0.000659
+Gen_nlo_of_pthincl_8TeV_WWBin5                +0.000000, 0.991772     -0.000006, 0.958981   -0.000566
+Gen_scale_of_pthincl_8TeV_WWBin0             ! -0.000158, 0.308144!    ! -0.000447, 0.320848!   -0.039585
+Gen_scale_of_pthincl_8TeV_WWBin1             ! -0.000134, 0.323568!    ! -0.010242, 0.318312!   -0.094198
+Gen_scale_of_pthincl_8TeV_WWBin2             ! -0.000072, 0.387023!    ! -0.003489, 0.367245!   -0.011212
+Gen_scale_of_pthincl_8TeV_WWBin3             ! -0.000008, 0.400092!    ! -0.008148, 0.411070!   +0.011487
+Gen_scale_of_pthincl_8TeV_WWBin4             ! -0.000033, 0.342341!    ! -0.001911, 0.341835!   +0.016512
+Gen_scale_of_pthincl_8TeV_WWBin5             ! +0.000042, 0.212833!    ! +0.001036, 0.204067!   -0.013196
+QCDscale_VV                                   +0.000218, 1.031461     -0.000398, 0.994321   -0.003516
+QCDscale_VVV                                  +0.000783, 1.081133     +0.000145, 0.982401   -0.000193
+QCDscale_VgS                                  -0.000002, 0.965864    * +0.189128, 0.809562*   -0.180378
+QCDscale_WW                                   +0.000293, 0.998633     +0.000829, 0.993641   -0.006758
+QCDscale_WW1in                                -0.000112, 1.038667     -0.000314, 0.994336   +0.002562
+QCDscale_ggH                                  +0.000000, 0.989143     -0.000000, 0.994457   +0.000262
+QCDscale_ggH1in                               +0.000000, 0.989143     +0.000024, 0.994456   +0.001013
+QCDscale_ggWW                                 +0.001621, 0.951614     +0.006310, 0.945851   -0.054172
+lumi_8TeV                                     +0.000466, 1.002204     +0.026360, 0.991017   -0.031587
+pdf_gg_ACCEPT                                 +0.000334, 1.003028     +0.000952, 0.993397   -0.008446
+pdf_qqbar_ACCEPT                              +0.000289, 1.013427     -0.000533, 0.994217   -0.004766

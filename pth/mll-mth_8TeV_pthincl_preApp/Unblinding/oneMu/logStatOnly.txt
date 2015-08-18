@@ -1,0 +1,8 @@
+Running Minos for POI 
+Real time 0:00:02, CP time 2.070
+
+
+ --- MultiDimFit ---
+best fit parameter values and profile-likelihood uncertainties: 
+   r :    +0.906   -0.192/+0.194 (68%)
+Done in 0.04 min (cpu), 0.05 min (real)

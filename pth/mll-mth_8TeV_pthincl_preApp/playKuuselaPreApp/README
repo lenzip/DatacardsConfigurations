@@ -1,0 +1,6 @@
+Last update: 04/08/2015
+
+fakes_reco.root - Histogram with fakes in bins of pTH_reco
+---------------------------------
+ACCEPTANCE CUTS: pT1>20 - pT2>10 - |eta1|<2.5 - |eta2|<2.5 - pTll>30 - mll>12 - mTH>50 - 1e1mu
+
